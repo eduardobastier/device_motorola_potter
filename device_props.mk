@@ -366,3 +366,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.qti.inputopts.enable=true \
     persist.vendor.qti.inputopts.movetouchslop=0.6
 
+# SurfaceFlinger
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.protected_contents=true
+
