@@ -416,4 +416,7 @@
         <item>com.moto.actions.KeyHandler</item>
     </string-array>
 
+    <!-- Whether device has turbo power charging support -->
+    <bool name="config_hasTurboPowerCharger">true</bool>
+
 </resources>
