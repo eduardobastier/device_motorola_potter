@@ -1,6 +1,5 @@
 #
-# Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2019 Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,8 +17,11 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/potter/full_potter.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Pixel Experience stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+TARGET_MINIMAL_APPS := true
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
@@ -27,7 +29,7 @@ TARGET_SCREEN_HEIGHT := 1920
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := potter
-PRODUCT_NAME := lineage_potter
+PRODUCT_NAME := aosp_potter
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 
