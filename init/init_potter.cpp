@@ -70,11 +70,6 @@ void num_sims() {
 
 void vendor_load_properties()
 {
-    std::string platform = android::base::GetProperty("ro.board.platform", "");
-
-    if (platform != ANDROID_TARGET)
-        return;
-
     // sku
     std::string sku = "Moto G5 Plus (";
     sku.append(android::base::GetProperty("ro.boot.hardware.sku", ""));
