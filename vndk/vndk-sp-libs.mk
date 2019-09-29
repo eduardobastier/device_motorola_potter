@@ -23,6 +23,8 @@ VNDK_SP_LIBRARIES := \
     libhwbinder \
     libion \
     liblzma \
+    libstagefright \
+    libstagefright_foundation \
     libpng \
     libunwind \
     libutils \

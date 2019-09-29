@@ -312,6 +312,12 @@ persist.data.df.mux_count=8
 persist.data.df.iwlan_mux=9
 persist.data.df.dev_name=rmnet_usb0
 
+# SurfaceFlinger
+ro.surface_flinger.protected_contents=true
+ro.surface_flinger.vsync_event_phase_offset_ns=2000000
+ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
+ro.surface_flinger.use_color_management=true
+
 #Trim properties
 ro.vendor.qti.sys.fw.trim_enable_memory=2147483648
 
