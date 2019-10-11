@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -186,13 +186,13 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
 
-# GPS
+# GPS / Location
 PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl-qti \
+    android.hardware.gnss@1.0-service-qti \
     libgnss \
     libgnsspps \
-    android.hardware.gnss@1.1-impl-qti \
-    android.hardware.gnss@1.1-service-qti \
-    libqsap_sdk \
+    libcurl \
     libqsap_shim
 
 PRODUCT_COPY_FILES += \
@@ -387,6 +387,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-potter.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
+PRODUCT_PACKAGES += android.hardware.thermal@1.0-impl \
+                    android.hardware.thermal@1.0-service \
+                    thermal.msm8953
+
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
@@ -413,25 +417,17 @@ PRODUCT_PACKAGES += \
     hostapd \
     libqsap_sdk \
     libwpa_client \
+    libQWiFiSoftApCfg \
+    tcpdump \
     wcnss_service \
     wificond \
     wifilogd \
     wpa_supplicant \
     wpa_supplicant.conf
 
-#Thermal
-PRODUCT_PACKAGES += android.hardware.thermal@1.0-impl \
-                    android.hardware.thermal@1.0-service \
-                    thermal.msm8953
-
-PRODUCT_PACKAGES += \
-    libcurl \
-    libQWiFiSoftApCfg \
-    wificond \
-    wifilogd \
-    tcpdump \
-    wcnss_service \
-    libwpa_client
+# Wi-Fi Display
+PRODUCT_BOOT_JARS += \
+    WfdCommon
 
 # Wifi Symlinks
 PRODUCT_PACKAGES += \
@@ -452,10 +448,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/zaf/zaf_mot_imx362.json:system/etc/zaf/zaf_mot_imx362.json \
     $(LOCAL_PATH)/configs/zaf/zaf_mot_s5k2l7.json:system/etc/zaf/zaf_mot_s5k2l7.json
-
-# Wi-Fi Display
-PRODUCT_BOOT_JARS += \
-    WfdCommon
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
