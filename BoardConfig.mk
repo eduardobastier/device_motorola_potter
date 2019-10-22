@@ -224,7 +224,7 @@ LZMA_RAMDISK_TARGETS := recovery
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
 
 # Root
-BOARD_ROOT_EXTRA_FOLDERS := firmware persist
+BOARD_ROOT_EXTRA_FOLDERS := firmware persist fsg
 
 # RIL
 TARGET_RIL_VARIANT := caf
