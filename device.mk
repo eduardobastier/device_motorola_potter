@@ -163,10 +163,6 @@ PRODUCT_PACKAGES += android.hardware.media.omx
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
-# DRM
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-lite
-
 # Ebtables
 PRODUCT_PACKAGES += \
     ebtables \
@@ -243,9 +239,10 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
+    libprotobuf-cpp-lite \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.0-impl \
-    android.hardware.drm@1.0-service.widevine
+    android.hardware.drm@1.1-service.clearkey
 
 # HIDL
 PRODUCT_PACKAGES += \
