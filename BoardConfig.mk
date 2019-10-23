@@ -270,7 +270,6 @@ PRODUCT_USE_VNDK_OVERRIDE := false
 
 # Wifi
 BOARD_HAS_QCOM_WLAN              := true
-BOARD_HAS_QCOM_WLAN_SDK          := true
 BOARD_USES_AOSP_WLAN_HAL         := true
 PRODUCT_VENDOR_MOVE_ENABLED      := true
 BOARD_WLAN_DEVICE                := qcwcn
