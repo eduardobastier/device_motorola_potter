@@ -192,6 +192,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.1-impl-qti \
     android.hardware.gnss@1.1-service-qti \
     libqsap_sdk \
+    libgpu_mapper_shim \
     libqsap_shim
 
 PRODUCT_COPY_FILES += \
