@@ -1,0 +1,26 @@
+[
+  {
+    "remote": "github",
+    "repository": "eduardobastier93/kernel_motorola_potter",
+    "target_path": "kernel/motorola/potter",
+    "branch": "10.0"
+  },
+  {
+    "remote": "github",
+    "repository": "eduardobastier93/vendor_motorola_potter",
+    "target_path": "vendor/motorola/potter",
+    "branch": "10.0"
+  },
+  {
+    "remote": "github",
+    "repository": "eduardobastier93/packages_resources_MotoActions",
+    "target_path": "packages/resources/MotoActions",
+    "branch": "10.0"
+  },
+  {
+    "remote": "github",
+    "repository": "LineageOS/android_system_qcom",
+    "target_path": "system/qcom",
+    "branch": "lineage-17.0"
+  }
+]
